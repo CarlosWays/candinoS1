@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="candinoS1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Tarea Semana 1"
+                TextColor="DodgerBlue"
+                FontSize="22"
+                HorizontalOptions="Center" />
+
+            <Border Stroke="black">
+                <Entry
+                    x:Name="txtNombre" Placeholder="Ingrese su nombre" PlaceholderColor="Salmon"
+                    MaxLength="15"
+                    />
+            </Border>
+
+            <Border Stroke="black">
+                <Entry
+                    x:Name="txtApellido" Placeholder="Ingrese su apellido" PlaceholderColor="Salmon"
+                    MaxLength="20"
+                    />
+            </Border>
+
+            <Border Stroke="black">
+                <Entry
+                    x:Name="txtEdad" Placeholder="Ingrese su edad" PlaceholderColor="Salmon"
+                    MaxLength="3"
+                    />
+            </Border>
+
+            <Border Stroke="black">
+                <Entry
+                    x:Name="txtSalario" Placeholder="Ingrese su salario" PlaceholderColor="Salmon"
+                    />
+            </Border>
+
+            <Button
+                x:Name="btnSaludo"
+                Text="Calcular Aporte"
+                Clicked="btnSaludoClicked" AnchorX="20"
+                Padding="16,8"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
